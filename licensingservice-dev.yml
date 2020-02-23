@@ -1,13 +1,22 @@
-spring.jpa.database: "POSTGRESQL"
-spring.datasource.platform:  "postgres"
-spring.jpa.show-sql: "false"
-spring.database.driverClassName: "org.postgresql.Driver"
-spring.datasource.url: "jdbc:postgresql://database:5432/eagle_eye_dev"
-spring.datasource.username: "postgres_dev"
-spring.datasource.password: "{cipher}d495ce8603af958b2526967648aa9620b7e834c4eaff66014aa805450736e119"
-spring.datasource.testWhileIdle: "true"
-spring.datasource.validationQuery: "SELECT 1"
-spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
+
 redis.server: "redis"
 redis.port: "6379"
 signing.key: "345345fsdfsf5345"
+
+spring.datasource.url : "jdbc:mysql://localhost:3306/exmicroservice?useUnicode:true&useJDBCCompliantTimezoneShift:true&useLegacyDatetimeCode:false&serverTimezone:UTC"
+spring.datasource.username : "root"
+spring.datasource.password : 
+
+spring.datasource.testWhileIdle : "true"
+spring.datasource.validationQuery : "SELECT 1"
+
+spring.jpa.show-sql : "true"
+
+spring.jpa.hibernate.ddl-auto : "update"
+
+spring.jpa.hibernate.naming-strategy : "org.hibernate.cfg.ImprovedNamingStrategy"
+
+
+spring.jpa.properties.hibernate.dialect : "org.hibernate.dialect.MySQL5Dialect"
+
+server.port: "8081"
